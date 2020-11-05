@@ -7,12 +7,13 @@ import tensorflow as tf
 
 from flask import Flask, request, abort, jsonify
 
-import helper
 
 flask_app = Flask(__name__)
 
 
 import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
