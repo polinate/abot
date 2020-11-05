@@ -1,6 +1,7 @@
 import json
 import pickle
 import numpy as np
+import keras
 from keras.models import load_model
 import tensorflow as tf
 
@@ -14,8 +15,6 @@ flask_app = Flask(__name__)
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
-import pickle
-import numpy as np
 
 from keras.models import load_model
 #path_to_model=tf.keras.utils.get_file('chatbot_model.h5', origin='https://drive.google.com/uc?id=1RJEfE3Cz4QmDg2epRq9dbW0QsWL0YMIW&export=download')
