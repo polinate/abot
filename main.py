@@ -79,7 +79,7 @@ def createAnswer(sentence):
 def create_answer():
 		message = request.args['message']
 		#message=[message]
-		res = createAnswer(message)
+		res = createAnswer(message.encode('utf-8')).encode('utf-8')
 		result = {
 		"error" : "0",
 		"message" : "success",
